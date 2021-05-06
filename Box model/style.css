@@ -1,0 +1,76 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 0 0 0;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  border: 0;
+  text-align: center;
+  background-color: bisque;
+}
+
+  .navbar {
+      width: 100%;
+      min-height: 60px;
+      top: 0;
+      background-color: aliceblue;   
+  }
+
+  li {
+    border-radius: 20%;
+    box-shadow: 2px 2px rgb(41, 6, 6);
+    padding: 5px;
+    background-color: cornsilk;
+    margin: 10px;
+    list-style-type: none;
+    cursor: pointer;
+    display: inline;
+    float: right; 
+  }
+
+  footer {
+    flex: 1;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 85%;
+      border: solid 2px black;
+    }
+  }
+
+  @media only screen and (max-width: 352px) {
+    .navbar {
+      min-height: 120px;
+    }
+  }
+
+  @media only screen and (max-width: 196px) {
+    .navbar {
+      min-height: 220px;
+    }
+  }
+
+  @media only screen and (max-width: 196px) {
+    li {
+      float: none;
+      display: inline-flex;
+    }
+  }
